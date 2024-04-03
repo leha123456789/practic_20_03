@@ -29,10 +29,6 @@ void applySobelFilter(Mat& img)
 int main()
 {
     Mat image = imread("input.jpg");
-    if (image.empty()) {
-        cerr << "Не удалось загрузить изображение." << endl;
-        return -1;
-    }
     Mat grayscaleImage = image.clone();
     Mat sepiaImage = image.clone();
     Mat negativeImage = image.clone();
